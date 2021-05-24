@@ -1,0 +1,6 @@
+- 👋 Hi, I’m @reset54
+- 👀 I’m interested in proggraming
+- 🌱 I’m currently learning git, github, python, sql, ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me reset54@yandex.ru
+
