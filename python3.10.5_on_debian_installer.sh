@@ -1,21 +1,23 @@
-#!/bin/sh
-
-
+#!/usr/bin/env bash
 # go to the folder whert we make work-directory, with the USER_NAME (reset54)
 cd $HOME
 
 # update the package manager dependencies
 sudo apt update && sudo apt upgrade
+sudo apt-get update
+
+# libs for your server install --yes
+sudo apt-get install -y curl gcc git htop mosh make vim tmux wget unzip zip
 
 # install the necessary libraries to install and build 
 # python 3.10.0 from source
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 
 # Download the archive, with Python
-wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz
+wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
 
 # Extract the archive
-tar -xzvf Python-3.10.5.tar.xz
+tar -xzvf Python-3.10.5.tgz
 
 # Navigate to the extracted directory
 cd Python-3.10.5
