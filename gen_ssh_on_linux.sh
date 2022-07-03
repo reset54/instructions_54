@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # sudo chmod +x    #for this script
 # Generated keys for linux
 # https://selectel.ru/blog/tutorials/how-to-generate-ssh/
