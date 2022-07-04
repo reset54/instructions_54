@@ -1,0 +1,5 @@
+# instructions on first settings
+https://github.com/alexey-goloburdin/debian-set-up-for-django
+
+# for ssh add secure keys
+https://github.com/reset54
