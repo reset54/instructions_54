@@ -6,12 +6,12 @@
 # gen
 ssh-keygen
 
-# Enter file in which to save the key (reset54 - my username)
+# Enter file in which to save the key
 sudo ls -lsi $HOME/.ssh/
-#cd $HOME/.ssh
+cd $HOME/.ssh
 
 # Enter passphrase (empty for no passphrase)
-# cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 
 # show key:
-cat ~/.ssh/id_rsa.pub >> /mnt/c/Users/reset/
+#cat ~/.ssh/id_rsa.pub >> /mnt/c/Users/reset/
