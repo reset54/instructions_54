@@ -11,17 +11,28 @@ jobs:
     welcome:
         runs-on: ubuntu-latest
         steps:
-            - name: print Welcome!
+            - name: print Welcome! 
               run: |
                   echo Welcome!
+                  
+    system_info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print folder $HOME contents 
+              run: |
                   # sudo apt update && sudo apt upgrade 
                   # sudo apt install tree
                   echo in HOME= $HOME :
                   ls -lsai $HOME
             
-            - name: echo ~/.bashrc
+            - name: print Variables Environement
+              run: |
+                  printenv
+            
+            - name: print ~/.bashrc
               run: |
                   cat ~/.bashrc
+                  
     
     deploy_repository:
         runs-on : ubuntu-latest
