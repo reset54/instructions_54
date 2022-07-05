@@ -16,9 +16,12 @@ jobs:
                   echo Welcome!
                   # sudo apt update && sudo apt upgrade 
                   # sudo apt install tree
-                  echo $HOME
+                  echo in HOME= $HOME :
                   ls -lsai $HOME
-
+            
+            - name: echo ~/.bashrc
+              run: |
+                  cat ~/.bashrc
     
     deploy_repository:
         runs-on : ubuntu-latest
