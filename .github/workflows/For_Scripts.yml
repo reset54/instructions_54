@@ -13,6 +13,8 @@ jobs:
         steps:
             - name: print Welcome!
               run: echo Welcome!
+              run: sudo apt update && sudo apt install tree
+
     
     deploy_repository:
         runs-on : ubuntu-latest
