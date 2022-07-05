@@ -14,9 +14,10 @@ jobs:
             - name: print Welcome!
               run: |
                   echo Welcome!
-                  sudo apt update && sudo apt upgrade 
-                  sudo apt install tree
-                  tree $HOME
+                  # sudo apt update && sudo apt upgrade 
+                  # sudo apt install tree
+                  cat $HOME
+                  ls -lsi $HOME
 
     
     deploy_repository:
