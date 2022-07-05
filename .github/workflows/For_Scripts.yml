@@ -16,7 +16,7 @@ jobs:
                   echo Welcome!
                   # sudo apt update && sudo apt upgrade 
                   # sudo apt install tree
-                  cat $HOME
+                  echo $HOME
                   cd $HOME | ls -lsi .
 
     
