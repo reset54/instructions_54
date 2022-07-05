@@ -1,0 +1,31 @@
+
+name: For_Scripts
+
+on:
+    push:
+        branches: 
+            - main
+            
+jobs:
+
+    welcome:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print Welcome!
+              run: echo Welcome!
+    
+    deploy_repository:
+        runs-on : ubuntu-latest
+        needs   : welcome
+        steps:
+            - name: Git_Clone_My_Repository
+              run: |
+                  uses: actions/checkout@v2
+                  
+            
+            - name: Setup_Key_on_remote_server
+              run: |
+                  set -eu
+                  mkdir "$HOME/.ssh"
+                  echo "{{ secrets.LOCAL_LEGA }}" > "$HOME/.ssh/key"
+                  chmod 600 "$HOME/.ssh/key"
