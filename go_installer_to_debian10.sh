@@ -8,7 +8,7 @@ cd $HOME
 sudo apt install wget -y
 GO_TAR_GZ="go1.18.3.linux-arm64.tar.gz"
 wget https://go.dev/dl/$GO_TAR_GZ
-# Compare the hash in the output with the checksum value on the Go download page. 
+
 # After downloading Go and verifying the integrity of the file, you can begin the installation process.
 sudo tar -xzvf $GO_TAR_GZ
 
