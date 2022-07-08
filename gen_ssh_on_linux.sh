@@ -12,6 +12,8 @@ ssh-keygen -t rsa -b 4096 -C $MY_EMAIL
 sudo ls -lsi $HOME/.ssh/
 cd $HOME/.ssh
 
-# Enter passphrase (empty for no passphrase)
+
 mv ~/.ssh/id_rsa.pub $REPO_NAME.deploy.pem
 sudo chmod 400 $REPO_NAME.deploy.pem
+
+# Enter passphrase (empty for no passphrase)
