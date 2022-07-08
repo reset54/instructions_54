@@ -118,7 +118,11 @@ export GOPATH="$HOME"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
-# use ssh-agent and add keys
+# add PATH python3.10
+export PATH="$PATH:$HOME/.python3.10/bin"
+
+# use ssh-agent and add keys, check current keys work
 eval "$(ssh-agent -s)"
 ssh-add $HOME/.ssh/instructions_54.deploy.pem
 ssh-add $HOME/.ssh/Learn_GO_lang.deploy.pem
+ssh-add -l

@@ -8,6 +8,7 @@ sudo apt-get update
 
 # libs for your server install --yes
 sudo apt-get install -y curl gcc htop mosh make vim tmux wget unzip zip
+sudo -H pip3 install virtualenv
 
 # install the necessary libraries to install and build 
 # python 3.10.0 from source
@@ -37,20 +38,14 @@ sudo make altinstall
 cd $HOME
 sudo rm -rf Python-3.10.5*
 
-# add our python in PATH (bash.rc - file)
-sudo echo "export PATH=$PATH:$HOME/.python3.10/bin" >> ~/.bashrc
-
-# run bashrc file
-sudo source ~/.bashrc
-
-# add our python in PATH /etc/profile - file
-sudo echo "export PATH=$PATH:$HOME/.python3.10/bin" >> ~/.profile
+# add PATH python3.10
+export PATH="$PATH:$HOME/.python3.10/bin"
 
 # run bashrc file
 sudo source ~/.profile
 
-# check the python version, was the installation successful?
-python3.10 --version
-
 # show environement variables (path, ...)
 env
+
+# check the python version, was the installation successful?
+python3.10 --version
