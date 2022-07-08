@@ -1,0 +1,20 @@
+name: jupiter_installer
+
+on:
+    push:
+        branches: 
+            - main
+            
+jobs:
+
+    install:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clone repository on ubuntu
+              uses: actions/checkout@v2
+              with:
+                  repository: instructions_54
+                  
+            - name: Run_script
+              run: |
+                  source jupiter_installer.sh
