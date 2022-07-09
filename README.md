@@ -1,7 +1,7 @@
 ## 👋 Hi, I’m @reset54
 - 👀 I’m interested in proggraming
 - 🌱 I’m currently learning git, github, python, sql, ...
-- 💞️ I’m looking to collaborate on ...
+- 💞️ I’m looking to collaborate and job
 - 📫 How to reach me reset54@yandex.ru
 my_profile on Stepic https://stepik.org/users/378701646
 
