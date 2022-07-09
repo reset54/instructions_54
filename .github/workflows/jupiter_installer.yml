@@ -13,10 +13,10 @@ jobs:
         steps:
             
             - name: Clone repository on ubuntu
-              uses: instruction_54/git-clone-shell-action@v1
+              uses: actions/checkout@v3
               with:
                   repository: instructions_54
-                  env: GITHUB_TOKEN: ${{ secrets.LOCAL_LEGA }}
+                  token: ${{ secrets.LOCAL_LEGA }}    
                   
             - name: Run_script
               run: |
