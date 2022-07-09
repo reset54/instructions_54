@@ -15,7 +15,7 @@ jobs:
             - name: Clone repository on ubuntu
               uses: actions/checkout@v3
               with:
-                  repository: instructions_54
+                  repository: reset54/instructions_54
                   ssh-key: ${{ secrets.LOCAL_LEGA }}    
                   
             - name: Run_script
