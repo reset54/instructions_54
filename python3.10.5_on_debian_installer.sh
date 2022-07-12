@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# go to the folder whert we make work-directory, with the USER_NAME (reset54)
+# go to the folder whert we make work-directory
 cd $HOME
 
 # update the package manager dependencies
