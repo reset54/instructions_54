@@ -8,7 +8,6 @@ sudo apt-get update
 
 # libs for your server install --yes
 sudo apt-get install -y curl gcc htop mosh make vim tmux wget unzip zip
-sudo -H pip3 install virtualenv
 
 # install the necessary libraries to install and build 
 # python 3.10.0 from source
