@@ -10,7 +10,7 @@ sudo apt-get update
 sudo apt-get install -y curl gcc htop mosh make vim tmux wget unzip zip bat
 
 # install the necessary libraries to install and build 
-# python 3.10.0 from source
+# python 3.10.5 from source
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 
 # Download the archive, with Python
