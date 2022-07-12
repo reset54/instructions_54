@@ -27,8 +27,9 @@ cd Python-3.10.5
 # command uses the -enable-optimizations flag to optimize the binary and run multiple tests.
 ./configure --enable-optimizations --prefix=$HOME/.python3.10/
 
-# startup assembly, number of processor cores on the server (my PC == 6)
-make -j 6 
+# startup assembly, number of processor cores on the server
+CORES=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || sysctl -n hw.ncpu || echo "$NUMBER_OF_PROCESSORS")
+make -j CORES
 
 # install python into $HOME.python3.10/
 # altinstall flag is used to save the default Python binary path in /usr/bin/python.
